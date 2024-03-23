@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #74c6e1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color:#598b95;
+  font-weight:bold ;
+  font-size: 30px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 20%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 80%;
+  background-color: #f1f1f1;
+  padding-left: 10px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+.admin_list ul {
+  background: #bcc1bc;
+  width: 250px;
+  height: 600px;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+.admin_list li {
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 1em;
+}
+.admin_list li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+.admin_list li:hover {
+  background: #CDE2CD;
+}
+.admin_login ul {
+  background: #bcc1bc;
+  width: 250px;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+.admin_login li {
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 1em;
+}
+.admin_login li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+.admin_login li:hover {
+  background: #CDE2CD;
+}
+table input[type=text]
+{
+  font-size: 17px;
+  width: 100%;
+}
+table center a
+{
+  color:black;
+  text-decoration: none;
+}
+table textarea
+{
+  width: 100%;
+}
+table center a:hover
+{
+  
+  color: aqua;
+}
+.btn_in a input[type=submit]
+{
+  width: 100px;
+  height: 30px;
+  background-color:dodgerblue;
+  font-size: 17px;
+  font-weight: bold;
+}
