@@ -1,3 +1,4 @@
+
 @extends('welcome')
 @section('flight')
 <style>
@@ -9,8 +10,27 @@
 </style>
 <form action="" method="post">
     <div class="form-group" style="color: white;font-weight: bold;">List Flight
+        <?php
+//         use Illuminate\Support\Facades\Http;
+//         function fetchAmadeusData() {
+//     $response = Http::get('https://test.api.amadeus.com/v1/reference-data/locations');
+
+//     if ($response->successful()) {
+//         // Xử lý dữ liệu ở đây nếu truy vấn thành công
+//         $data = $response->json(); // Lấy dữ liệu dưới dạng JSON
+//         return $data;
+//     } else {
+//         // Xử lý khi truy vấn không thành công
+//         $statusCode = $response->status(); // Lấy mã trạng thái HTTP
+//         $errorMessage = $response->body(); // Lấy thông báo lỗi
+//         return "Lỗi khi truy vấn API. Mã lỗi: $statusCode, Thông báo: $errorMessage";
+//     }
+// }
+
+
+        ?>
         <select class="form-select" aria-label="Default select example" style="width: 300px;height: 50px;color:black" name="changbay">
-            <option selected>Open this select menu</option>
+            <option selected onclick="">Open this select menu</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>

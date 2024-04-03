@@ -10,13 +10,13 @@
     <title>Booking Form HTML Template</title>
 
     <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    {{-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> --}}
 
     <!-- Bootstrap -->
-    <link type="text/css" rel="stylesheet" href="{{asset('public/fontend/css/bootstrap.min.css')}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset('fontend/css/bootstrap.min.css')}}" />
 
     <!-- Custom stlylesheet -->
-    <link type="text/css" rel="stylesheet" href="{{asset('public/fontend/css/style.css')}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset('fontend/css/style.css')}}" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,7 +28,7 @@
 </head>
 <style>
     body {
-        background-image: url('{{ asset("public/fontend/images/image.png") }}')
+        background-image: url('{{ asset("fontend/images/image.png") }}')
     }
 </style>
 
@@ -49,7 +49,7 @@
     @yield('contact')
     @yield('flight')
     @yield('detail')
-    <script src="{{asset('public/fontend/js/jquery.min.js')}}"></script>
+    <script src="{{asset('fontend/js/jquery.min.js')}}"></script>
     <script>
         $('.form-control').each(function() {
             floatedLabel($(this));
@@ -80,7 +80,7 @@
                 returnDateInput.style.display = "none";
             }
         }
-        toggleReturnDate();
+       toggleReturnDate();
     </script>
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
